@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Human-AI Readiness Sprint</title>
+  <meta name="description" content="Set. Choose. Challenge. Ein d-school-inspiriertes Workshop-Tool für bewusste Human-AI Collaboration." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#set">Direkt zum Sprint</a>
+
+  <main class="app">
+    <header class="hero" id="top">
+      <section class="hero-copy" aria-labelledby="page-title">
+        <p class="eyebrow">Human-AI Innovation Readiness Sprint</p>
+        <h1 id="page-title">Set. Choose. Challenge.</h1>
+        <p class="lead">
+          Ein kompakter Sprint für bessere Human-AI-Arbeit:
+          Grundregeln klären, KI-Rollen bewusst wählen und echten Austausch mit KI starten.
+        </p>
+        <div class="hero-meta" aria-label="Sprint Eckdaten">
+          <span>60–90 Min</span>
+          <span>Einsteigerfreundlich · Auch für Fortgeschrittene</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#set">Sprint starten</a>
+        </div>
+      </section>
+
+      <aside class="outcome-card" aria-label="Ergebnisse des Sprints">
+        <h2>Nimm drei direkt nutzbare Ergebnisse mit.</h2>
+        <p class="outcome-intro">
+          In 60–90 Minuten klärst du, wie KI mit dir arbeiten soll – und wie du sie in echten Aufgaben bewusst einsetzt.
+        </p>
+        <div class="outcome-list">
+          <article>
+            <span class="step-dot set">1</span>
+            <div>
+              <h3>KI-Arbeitsvereinbarung</h3>
+              <p>Damit Antworten klarer, ehrlicher und nützlicher werden.</p>
+            </div>
+          </article>
+          <article>
+            <span class="step-dot choose">2</span>
+            <div>
+              <h3>Agency-Kompass</h3>
+              <p>Damit du bewusst entscheidest, wann KI assistiert, mitdenkt oder geprüft werden muss.</p>
+            </div>
+          </article>
+          <article>
+            <span class="step-dot challenge">3</span>
+            <div>
+              <h3>Sparring-Prompt</h3>
+              <p>Damit Ideen und Annahmen konstruktiv geschärft werden.</p>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </header>
+
+    <nav class="progress-nav" aria-label="Sprint Navigation">
+      <a href="#set"><span>1</span>Set</a>
+      <a href="#choose"><span>2</span>Choose</a>
+      <a href="#challenge"><span>3</span>Challenge</a>
+      <a href="#readiness"><span>4</span>Readiness-Karte</a>
+    </nav>
+
+    <section id="set" class="module module-set">
+      <div class="module-heading">
+        <div>
+          <p class="module-kicker">1 · Set</p>
+          <h2>KI-Arbeitsvereinbarung</h2>
+        </div>
+        <p>
+          Lege ein stabiles Grundsetup fest: wie KI antworten, nachfragen, Unsicherheit markieren und konstruktiv widersprechen soll. Konkrete Aufgaben ordnest du später separat ein.
+        </p>
+      </div>
+
+      <div class="instruction-strip" aria-label="Anleitung für Set">
+        <article><strong>Arbeitsweise klären</strong><span>Antwortstil, Rückfragen, Unsicherheit und Widerspruch definieren.</span></article>
+        <article><strong>Defaults vermeiden</strong><span>Weniger Schwafeln, weniger Scheinsicherheit, mehr Nutzwert.</span></article>
+        <article><strong>Setup kopieren</strong><span>Kurzprofil oder Arbeitsvereinbarung direkt ins KI-Tool übernehmen.</span></article>
+      </div>
+
+      <div class="workspace two-col">
+        <form id="profileForm" class="panel form-panel">
+          <fieldset class="form-section">
+            <legend>1 · Antwortverhalten</legend>
+            <div class="form-grid">
+              <label>Antwortlänge
+                <input type="range" name="length" min="1" max="5" value="3" />
+                <span class="rangeHelp">1 = sehr knapp · 5 = ausführlich</span>
+              </label>
+
+              <label>Ton
+                <select name="tone">
+                  <option>Klar & professionell</option>
+                  <option>Direkt & kritisch-konstruktiv</option>
+                  <option>Warm & unterstützend</option>
+                  <option>Nüchtern & analytisch</option>
+                  <option>Kreativ & explorativ</option>
+                </select>
+              </label>
+
+              <label>Struktur
+                <select name="structure">
+                  <option>Erst Fazit, dann Begründung</option>
+                  <option>Kurze Absätze</option>
+                  <option>Kategorien & Kriterien</option>
+                  <option>Schritt für Schritt</option>
+                  <option>Optionen + Empfehlung</option>
+                </select>
+              </label>
+
+              <label>Rückfragen
+                <select name="clarify">
+                  <option>Nur wenn nötig</option>
+                  <option>Erst klären, dann antworten</option>
+                  <option>Mit Annahmen starten</option>
+                </select>
+              </label>
+
+              <label>Umgang mit Unsicherheit
+                <select name="uncertainty">
+                  <option>Unsicherheit klar markieren</option>
+                  <option>Risiken kurz nennen</option>
+                  <option>Mehrere Perspektiven zeigen</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section rules-section">
+            <legend>2 · Qualitätsregeln</legend>
+            <p class="field-help">Diese Regeln sind keine Stilwünsche, sondern Schutz gegen häufige KI-Probleme.</p>
+            <div class="rule-box">
+              <label class="check"><input type="checkbox" checked name="rule_useful"> Relevanz vor Länge: keine Floskeln, keine künstliche Begeisterung, keine unnötigen Listen.</label>
+              <label class="check"><input type="checkbox" checked name="rule_uncertainty"> Evidenz sauber halten: Fakten/Daten, Interpretationen, Annahmen und Vermutungen sichtbar trennen; nichts erfinden.</label>
+              <label class="check"><input type="checkbox" checked name="rule_assumptions"> Kontextlücken sichtbar machen: fehlende Informationen benennen; nur dann nachfragen, wenn es die Qualität deutlich verbessert.</label>
+              <label class="check"><input type="checkbox" checked name="rule_constructive"> Konstruktive Reibung erzeugen: Potenzial würdigen, Risiken und blinde Flecken zeigen, Verbesserungsoptionen anbieten.</label>
+              <label class="check"><input type="checkbox" checked name="rule_responsibility"> Verantwortung beim Menschen lassen: Entscheidungen vorbereiten, aber nicht scheinbar übernehmen.</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section optional-section">
+            <legend>3 · Kontext & Feinjustierung</legend>
+            <p class="field-help">Nur ergänzen, was der KI dauerhaft hilft, individueller mit dir zu arbeiten. Konkrete Aufgabeninfos gibst du später direkt im jeweiligen Prompt.</p>
+
+            <label>Wichtige Infos über mich <span class="optional">optional</span>
+              <textarea name="context" placeholder="z. B. Rolle, Arbeitsweise, Sprache, Fachgebiet, bevorzugte Formate, typische Zielgruppen, Dinge, die KI über mich wissen sollte"></textarea>
+            </label>
+
+
+            <label>Was soll KI vermeiden? <span class="optional">optional</span>
+              <textarea name="annoyances" placeholder="z. B. lange Einleitungen, oberflächliche Tipps, künstliche Begeisterung, Scheinsicherheit, zu viele Listen"></textarea>
+            </label>
+
+            <label>Was soll KI unbedingt tun? <span class="optional">optional</span>
+              <textarea name="musts" placeholder="z. B. relevante Gegenfragen stellen, Kriterien vorschlagen, Beispiele geben, ehrliches Feedback geben"></textarea>
+            </label>
+          </fieldset>
+
+          <button class="button primary wide" type="submit">Arbeitsvereinbarung generieren</button>
+        </form>
+
+        <section class="panel output-panel sticky-output" aria-live="polite">
+          <div class="outputHeader">
+            <div>
+              <p class="small-label">Output</p>
+              <h3>Dein KI-Setup</h3>
+            </div>
+            <div class="output-actions">
+              <button id="copyProfileBtn" class="button mini" type="button">Kopieren</button>
+              <button id="downloadProfileBtn" class="button mini ghost-dark" type="button" title="Als MD-Datei herunterladen" aria-label="Als Markdown-Datei herunterladen">MD</button>
+            </div>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Output Ansicht">
+            <button class="tab active" data-profile-tab="short" type="button">Kurzprofil</button>
+            <button class="tab" data-profile-tab="long" type="button">Arbeitsvereinbarung</button>
+            <button class="tab" data-profile-tab="test" type="button">Test-Prompts</button>
+          </div>
+          <p class="output-hint">Kurzprofil für schnelle Tool-Einstellungen. Arbeitsvereinbarung für Projekte oder wiederkehrende Zusammenarbeit.</p>
+
+          <pre id="profileResult">Fülle links dein Profil aus und klicke auf „Arbeitsvereinbarung generieren“.</pre>
+        </section>
+      </div>
+    </section>
+
+    <section id="choose" class="module module-choose">
+      <div class="module-heading">
+        <div>
+          <p class="module-kicker">2 · Choose</p>
+          <h2>Agency Dilemma Game</h2>
+        </div>
+        <p>
+          Trainiere Rollenurteil anhand kurzer Dilemmata. Es geht nicht um richtig oder falsch, sondern um bewusste Kriterien: Konsequenz, Prüfbarkeit, Lernwert, Originalität, Verantwortung und Skalierung.
+        </p>
+      </div>
+
+      <div class="instruction-strip" aria-label="Anleitung für Choose">
+        <article><strong>Szenario</strong><span>Wähle spontan eine KI-Rolle.</span></article>
+        <article><strong>Empfehlung</strong><span>Prüfe Begründung, Drift-Risiko und Schutzbedingung.</span></article>
+        <article><strong>Transfer</strong><span>Wende die Rollenlogik auf echte Aufgaben an.</span></article>
+      </div>
+
+
+      <div class="workspace two-col choose-layout">
+        <section class="panel dilemma-panel">
+          <div class="dilemma-topline">
+            <p class="small-label">Szenario <span id="scenarioIndex">1</span>/<span id="scenarioTotal">8</span></p>
+            <div class="scenario-controls">
+              <button id="prevScenario" class="button mini ghost-btn" type="button">Zurück</button>
+              <button id="nextScenario" class="button mini" type="button">Weiter</button>
+            </div>
+          </div>
+
+          <article class="scenario-card">
+            <h3 id="scenarioTitle"></h3>
+            <p id="scenarioText"></p>
+          </article>
+
+          <div class="mode-choice" role="group" aria-label="Modus wählen">
+            <button data-choice="human" type="button"><strong>Human Only</strong><span>Selbst führen, wenn Urteilskraft, Lernen, Verantwortung oder Originalität zentral sind.</span></button>
+            <button data-choice="assisted" type="button"><strong>Assisted</strong><span>KI unterstützt, wenn Ziel klar ist und Menschen Qualität gut prüfen können.</span></button>
+            <button data-choice="partnered" type="button"><strong>Partnered</strong><span>KI denkt mit, wenn Reibung, Alternativen oder Entscheidungen unter Unsicherheit wichtig sind.</span></button>
+            <button data-choice="supervised" type="button"><strong>Supervised</strong><span>KI produziert, Menschen prüfen systematisch nach klaren Kriterien.</span></button>
+            <button data-choice="delegated" type="button"><strong>Delegated</strong><span>KI handelt nur mit klaren Grenzen, Monitoring, Stop-Regeln und Verantwortlichkeit.</span></button>
+          </div>
+
+          <label>Warum würdest du diesen Modus wählen? <span class="optional">optional</span>
+            <textarea id="choiceReason" placeholder="z. B. weil die Konsequenz hoch ist, weil wir Qualität gut prüfen können, weil wir lernen wollen..."></textarea>
+          </label>
+
+          <button id="showRecommendation" class="button primary wide" type="button">Empfehlung anzeigen</button>
+        </section>
+
+        <section class="panel recommendation-panel" aria-live="polite">
+          <p class="small-label">Begründete Empfehlung</p>
+          <div id="recommendationResult" class="empty-state">
+            Wähle links einen Modus und lass dir danach die Empfehlung anzeigen.
+          </div>
+        </section>
+      </div>
+
+      <section class="panel task-lens">
+        <div class="task-lens-intro">
+          <p class="small-label">Transfer</p>
+          <h3>Auf eigene Aufgaben übertragen</h3>
+          <p>
+            Wähle eine echte Aufgabe aus deinem Alltag. Halte kurz fest, welche KI-Rolle passt und was du selbst führen, prüfen oder entscheiden musst.
+          </p>
+        </div>
+        <div class="task-lens-body">
+          <form id="taskLensForm" class="task-lens-grid">
+            <label>Eigene Aufgabe
+              <input name="task" placeholder="z. B. Text überarbeiten, Idee prüfen, Gespräch vorbereiten, Recherche auswerten" />
+            </label>
+            <label>Passende KI-Rolle
+              <select name="mode">
+                <option>Assisted - KI unterstützt, Mensch führt</option>
+                <option>Partnered - KI denkt iterativ mit</option>
+                <option>Human Only - bewusst ohne KI starten</option>
+                <option>Supervised - KI produziert, Mensch prüft</option>
+                <option>Delegated - nur mit Grenzen und Monitoring</option>
+              </select>
+            </label>
+            <label>Was bleibt menschlich?
+              <input name="human" placeholder="z. B. finale Entscheidung, Bewertung von Nutzerkontext, Verantwortung" />
+            </label>
+            <button class="button secondary" type="submit">Aufgabe hinzufügen</button>
+          </form>
+          <div class="task-list-wrap">
+            <div class="task-list-head">
+              <strong>Hinzugefügte Aufgaben</strong>
+              <span id="taskCount">0</span>
+            </div>
+            <div id="taskLensList" class="task-lens-list empty">Noch keine Aufgabe hinzugefügt. Wähle links eine echte Aufgabe, eine KI-Rolle und was menschlich bleiben soll.</div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="challenge" class="module module-challenge">
+      <div class="module-heading">
+        <div>
+          <p class="module-kicker">3 · Challenge</p>
+          <h2>KI als Sparringspartner</h2>
+        </div>
+        <p>
+          Nutze KI als konstruktiven Sparringspartner. Der eigentliche Wert entsteht in Runde 2 und 3: prüfen, reagieren, nachschärfen.
+        </p>
+      </div>
+
+      <div class="instruction-strip" aria-label="Anleitung für Challenge">
+        <article><strong>Format wählen</strong><span>Robustheits-Check, Schichten-Analyse oder Experten-Diskussion.</span></article>
+        <article><strong>Echte Frage nutzen</strong><span>Nicht üben um des Übens willen: nimm eine reale Idee oder Annahme.</span></article>
+        <article><strong>Iterieren</strong><span>Die erste Antwort ist Startpunkt. Wert entsteht durch Reaktion und Nachschärfung.</span></article>
+      </div>
+
+      <div class="sparring-grid" id="sparringGrid" aria-label="Sparring Formate">
+        <button class="sparring-card active" data-sparring="robust" type="button">
+          <span>01</span>
+          <h3>Robustheits-Check</h3>
+          <p>Für Ideen, Strategien und Entscheidungen. Kritisch-konstruktiv statt deprimierend.</p>
+        </button>
+        <button class="sparring-card" data-sparring="layers" type="button">
+          <span>02</span>
+          <h3>Schichten-Analyse</h3>
+          <p>Für Annahmen, Glaubenssätze und unsichtbare Prämissen.</p>
+        </button>
+        <button class="sparring-card" data-sparring="experts" type="button">
+          <span>03</span>
+          <h3>Experten-Diskussion</h3>
+          <p>Für strategische Fragen mit mehreren widersprüchlichen Perspektiven.</p>
+        </button>
+      </div>
+
+      <div class="workspace two-col">
+        <form id="sparringForm" class="panel form-panel">
+          <div class="section-note challenge-note">
+            <strong id="sparringName">Robustheits-Check</strong>
+            <span id="sparringUse">Mach eine Idee robuster: Stärken würdigen, Risiken prüfen, Verbesserungen ableiten.</span>
+          </div>
+
+          <label id="sparringMainLabel">Idee, Strategie oder Entscheidung
+            <textarea name="main" placeholder="Beschreibe kurz, woran du arbeitest..."></textarea>
+          </label>
+
+          <label id="sparringContextLabel">Relevanter Kontext
+            <textarea name="context" placeholder="Zielgruppe, Ziel, aktueller Stand, Einschränkungen, Unsicherheiten..."></textarea>
+          </label>
+
+          <button class="button primary wide" type="submit">Sparring-Prompt generieren</button>
+        </form>
+
+        <section class="panel output-panel" aria-live="polite">
+          <div class="outputHeader">
+            <div>
+              <p class="small-label">Output</p>
+              <h3>Sparring-Prompt</h3>
+            </div>
+            <button id="copySparringBtn" class="button mini" type="button">Kopieren</button>
+          </div>
+          <pre id="sparringResult">Wähle ein Format, beschreibe deine Aufgabe und generiere einen Prompt.</pre>
+        </section>
+      </div>
+    </section>
+
+    <section id="readiness" class="module module-readiness">
+      <div class="module-heading">
+        <div>
+          <p class="module-kicker">4 · Readiness-Karte</p>
+          <h2>Dein Takeaway</h2>
+        </div>
+        <p>
+          Die Karte ist deine kompakte Zusammenfassung: Du kannst sie für dich behalten, in einen neuen Chat kopieren oder als Orientierung nutzen, wenn du KI in Aufgaben einbindest.
+        </p>
+      </div>
+
+      <div class="readiness-purpose" aria-label="So nutzt du deine Readiness-Karte">
+        <article><strong>Für dich</strong><span>Als Erinnerung, wie du KI nutzen möchtest.</span></article>
+        <article><strong>Für KI</strong><span>In einen neuen Chat kopieren, damit die KI deine Arbeitsweise kennt.</span></article>
+        <article><strong>Für Aufgaben</strong><span>Als Check, welche Rolle KI übernehmen soll und was menschlich bleibt.</span></article>
+      </div>
+
+      <div class="workspace single-col">
+        <section class="panel output-panel readiness-output" aria-live="polite">
+          <div class="outputHeader">
+            <div>
+              <p class="small-label">Output</p>
+              <h3>KI-Readiness-Karte</h3>
+            </div>
+            <div class="output-actions">
+              <button id="copyReadinessBtn" class="button mini" type="button">Kopieren</button>
+              <button id="downloadReadinessBtn" class="button mini ghost-dark" type="button" title="Als MD-Datei herunterladen" aria-label="Als Markdown-Datei herunterladen">MD</button>
+            </div>
+          </div>
+          <pre id="readinessResult"></pre>
+        </section>
+      </div>
+    </section>
+
+    <footer class="site-footer" aria-label="Credits">
+      <div>
+        <p class="small-label">Konzept & Umsetzung</p>
+        <strong>Samuel Tschepe</strong>
+        <span>Human-AI Innovation</span>
+        <span class="version-label">V3 · Stand Juli 2026</span>
+      </div>
+      <img src="hpi_dschool_logo_blue.png" alt="HPI d-school" />
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">Kopiert</div>
+  <script src="app.js"></script>
+</body>
+</html>
